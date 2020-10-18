@@ -2,6 +2,8 @@
 
 namespace Agweria\Mpesa;
 
+use Agweria\Mpesa\Commands\CreateAppCommand;
+use Agweria\Mpesa\Commands\RegisterUrl;
 use Illuminate\Support\ServiceProvider;
 
 class MpesaServiceProvider extends ServiceProvider
@@ -15,7 +17,7 @@ class MpesaServiceProvider extends ServiceProvider
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'agweria');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'agweria');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         // Publishing is only necessary when using the CLI.
@@ -31,7 +33,12 @@ class MpesaServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/mpesa.php', 'mpesa');
+        $this->mergeConfigFrom(__DIR__ . '/../config/agweria.mpesa.php', 'agweria.mpesa');
+
+        $this->commands([
+            CreateAppCommand::class,
+            RegisterUrl::class
+        ]);
 
         // Register the service the package provides.
         $this->app->singleton('mpesa', function ($app) {
@@ -58,8 +65,8 @@ class MpesaServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/mpesa.php' => config_path('mpesa.php'),
-        ], 'mpesa.config');
+            __DIR__ . '/../config/agweria.mpesa.php' => config_path('agweria.mpesa.php'),
+        ], 'agweria.mpesa.config');
 
         // Publishing the views.
         /*$this->publishes([
