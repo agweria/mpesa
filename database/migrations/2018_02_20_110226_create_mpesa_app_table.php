@@ -13,7 +13,7 @@ class CreateMpesaAppTable extends Migration
      */
     public function up()
     {
-        Schema::create('mpesa_app', function (Blueprint $table) {
+        Schema::create('mpesa_apps', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('shortcode', 10);
             $table->double('environment', ['sandbox', 'production']);
@@ -37,6 +37,6 @@ class CreateMpesaAppTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mpesa_app');
+        Schema::dropIfExists('mpesa_apps');
     }
 }
