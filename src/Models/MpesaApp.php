@@ -1,13 +1,11 @@
 <?php
 
-
 namespace Agweria\Mpesa\Models;
-
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Agweria\Mpesa\Models\MpesaApp
+ * Agweria\Mpesa\Models\MpesaApp.
  *
  * @property int $id
  * @property string $shortcode
@@ -42,5 +40,4 @@ use Illuminate\Database\Eloquent\Model;
  */
 class MpesaApp extends Model
 {
-
 }

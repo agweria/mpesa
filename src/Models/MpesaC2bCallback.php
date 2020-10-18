@@ -5,7 +5,7 @@ namespace Agweria\Mpesa\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Agweria\Mpesa\Models\MpesaC2bCallback
+ * Agweria\Mpesa\Models\MpesaC2bCallback.
  *
  * @property int $id
  * @property int|null $app_id
@@ -53,6 +53,6 @@ class MpesaC2bCallback extends Model
 
     public function getNameAttribute()
     {
-        return $this->FirstName . ' ' . $this->MiddleName . ' ' . $this->LastName;
+        return $this->FirstName.' '.$this->MiddleName.' '.$this->LastName;
     }
 }

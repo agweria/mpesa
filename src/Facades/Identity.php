@@ -1,14 +1,11 @@
 <?php
 
-
 namespace Agweria\Mpesa\Facades;
-
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class Identity
- * @package Agweria\Mpesa\Facades
+ * Class Identity.
  */
 class Identity extends Facade
 {
