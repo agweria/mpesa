@@ -1,0 +1,41 @@
+{
+    "name": "agweria/mpesa",
+    "description": "MPESA API wrapper for Laravel 8 with dashboards and multiple accounts for C2B, B2C and B2B.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "samueldervis",
+            "email": "sam@agweria.com",
+            "homepage": "https://agweria.com"
+        }
+    ],
+    "homepage": "https://github.com/agweria/mpesa",
+    "keywords": ["Laravel", "Mpesa"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Agweria\\Mpesa\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Agweria\\Mpesa\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Agweria\\Mpesa\\MpesaServiceProvider"
+            ],
+            "aliases": {
+                "Mpesa": "Agweria\\Mpesa\\Facades\\Mpesa"
+            }
+        }
+    }
+}
