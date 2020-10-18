@@ -4,15 +4,29 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "samueldervis",
-            "email": "sam@agweria.com",
+            "name": "Agweria LLC",
+            "email": "opensource@agweria.com",
             "homepage": "https://agweria.com"
         }
     ],
     "homepage": "https://github.com/agweria/mpesa",
-    "keywords": ["Laravel", "Mpesa"],
+    "keywords": [
+        "samueldervis",
+        "pesa",
+        "mobile money",
+        "samerior group",
+        "agweria",
+        "agweria llc",
+        "mpesa",
+        "mpesa api",
+        "equitel",
+        "laravel",
+        "equity",
+        "api",
+        "payments"
+    ],
     "require": {
-        "illuminate/support": "~7|~8"
+        "illuminate/support": "~8"
     },
     "require-dev": {
         "phpunit/phpunit": "~9.0",
@@ -28,14 +42,28 @@
             "Agweria\\Mpesa\\Tests\\": "tests"
         }
     },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
     "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        },
         "laravel": {
             "providers": [
                 "Agweria\\Mpesa\\MpesaServiceProvider"
             ],
             "aliases": {
-                "Mpesa": "Agweria\\Mpesa\\Facades\\Mpesa"
+                "B2C": "Agweria\\Mpesa\\Facades\\B2C",
+                "Identity": "Agweria\\Mpesa\\Facades\\Identity",
+                "Register": "Agweria\\Mpesa\\Facades\\Registrar",
+                "STK": "Agweria\\Mpesa\\Facades\\STK"
             }
         }
+    },
+    "config": {
+        "sort-packages": true
     }
 }
