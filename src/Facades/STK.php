@@ -1,14 +1,11 @@
 <?php
 
-
 namespace Agweria\Mpesa\Facades;
-
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class STK
- * @package Agweria\Mpesa\Facades
+ * Class STK.
  */
 class STK extends Facade
 {

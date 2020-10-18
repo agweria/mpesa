@@ -1,13 +1,11 @@
 <?php
 
-
 namespace Agweria\Mpesa\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class B2C
- * @package Agweria\Mpesa\Facades
+ * Class B2C.
  */
 class B2C extends Facade
 {

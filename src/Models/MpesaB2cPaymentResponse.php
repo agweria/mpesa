@@ -5,7 +5,7 @@ namespace Agweria\Mpesa\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Agweria\Mpesa\Models\MpesaB2cPaymentResponse
+ * Agweria\Mpesa\Models\MpesaB2cPaymentResponse.
  *
  * @property int $id
  * @property int $b2c_request_id
