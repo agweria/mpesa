@@ -5,19 +5,13 @@ namespace Agweria\Mpesa\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Samerior\MobileMoney\Mpesa\Database\Entities\MpesaBulkPaymentResponse
+ * Agweria\Mpesa\Models\MpesaBulkPaymentResponse
  *
- * @property int $id
- * @property int $ResultType
- * @property int $ResultCode
- * @property string $ResultDesc
- * @property string $OriginatorConversationID
- * @property string $ConversationID
- * @property string $TransactionID
- * @property string|null $ResultParameters
- * @property \Carbon\Carbon|null $created_at
- * @property \Carbon\Carbon|null $updated_at
- * @property-read \Samerior\MobileMoney\Mpesa\Database\Entities\MpesaBulkPaymentRequest $request
+ * @property-read \Agweria\Mpesa\Models\MpesaB2cResultParameter|null $data
+ * @property-read \Agweria\Mpesa\Models\MpesaBulkPaymentRequest $request
+ * @method static \Illuminate\Database\Eloquent\Builder|MpesaBulkPaymentResponse newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|MpesaBulkPaymentResponse newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|MpesaBulkPaymentResponse query()
  * @mixin \Eloquent
  */
 class MpesaBulkPaymentResponse extends Model
