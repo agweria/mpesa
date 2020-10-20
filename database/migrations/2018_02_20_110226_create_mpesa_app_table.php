@@ -15,7 +15,7 @@ class CreateMpesaAppTable extends Migration
     {
         Schema::create('mpesa_apps', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('shortcode', 10);
+            $table->string('shortcode', 10)->unique();
             $table->double('environment', ['sandbox', 'production']);
             $table->boolean('enable_b2c')->default(false);
             $table->boolean('enable_b2b')->default(false);
@@ -25,6 +25,7 @@ class CreateMpesaAppTable extends Migration
             $table->string('initiator_username')->nullable();
             $table->text('security_password')->nullable();
             $table->boolean('enabled')->default(true);
+            $table->boolean('registered')->default(false);
             $table->timestamps();
         }
         );

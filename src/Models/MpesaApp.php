@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $initiator_username
  * @property string|null $security_password
  * @property int $enabled
+ * @property int $registered
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp newModelQuery()
@@ -35,6 +36,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp whereInitiatorUsername($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp wherePasskey($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp whereRegistered($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp whereSecurityPassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp whereShortcode($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MpesaApp whereUpdatedAt($value)
