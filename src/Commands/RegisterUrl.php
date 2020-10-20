@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Agweria\Mpesa\Commands;
 
 
@@ -8,8 +7,7 @@ use Agweria\Mpesa\Models\MpesaApp;
 use Illuminate\Console\Command;
 
 /**
- * Class RegisterUrl
- * @package Agweria\Commands
+ * Class RegisterUrl.
  */
 class RegisterUrl extends Command
 {

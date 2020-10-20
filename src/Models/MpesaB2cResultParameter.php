@@ -5,7 +5,7 @@ namespace Agweria\Mpesa\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Agweria\Mpesa\Models\MpesaB2cResultParameter
+ * Agweria\Mpesa\Models\MpesaB2cResultParameter.
  *
  * @property int $id
  * @property int $response_id

@@ -5,7 +5,7 @@ namespace Agweria\Mpesa\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Agweria\Mpesa\Models\MpesaStkCallback
+ * Agweria\Mpesa\Models\MpesaStkCallback.
  *
  * @property int $id
  * @property int $mpesa_stk_request_id
